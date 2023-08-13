@@ -1,5 +1,6 @@
 :root {
-
+    --dark-brown: hsl(34, 48%, 20%);
+    --light-gold: rgb(255, 232, 190);
 }
 
 * {
@@ -7,7 +8,8 @@
     list-style: none;
     text-align: center;
     padding: 0;
-    margin: 0
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -17,20 +19,53 @@ body {
 
 header h1 {
     font-size: 48px;
-    color: hsl(34, 48%, 20%);
+    color: var(--dark-brown);
 }
 
-ul li a {
+ul {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+li a {
     text-decoration: none;
     font-size: 30px;
-    color: hsl(34, 48%, 20%);
-    
+    color: transparent;
 }
 
-ul li {
+li {
     margin: 40px;
 }
 
-a:hover {
+li div {
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+li:nth-child(1) div {
+    background-image: url(../images/mug-cake-img.jpeg);
+}
+
+li:nth-child(2) div {
+    background-image: url(../images/biryani-img.jpg);
+}
+
+li:nth-child(3) div {
+    background-image: url(../images/pb-j-img.jpg);
+}
+
+a div:hover {
     font-weight: bold;
+    color: var(--light-gold);
+    box-shadow: 0px 0px 1000px black inset;
+    outline: 3px solid var(--light-gold);
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
