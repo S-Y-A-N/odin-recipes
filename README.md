@@ -19,4 +19,4 @@ A basic recipes website done for [The Odin Project](https://www.theodinproject.c
 
 Note: The recipes are not taken from the credited websites, only the photo.
 
-If you are the owner of one of used photos please contact me and I will remove it.
+If you are the owner of one of the used photos please contact me and I will remove it.
